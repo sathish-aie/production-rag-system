@@ -5,6 +5,8 @@ Hybrid-RAG over a single Postgres + pgvector store, every model call through Lit
 SSE token streaming, Prometheus/Langfuse observability, and a golden-set eval harness.
 P0a delivered the walking skeleton: PDF ingest → dense retrieval → cited, grounded answers.
 
+> **Pilot eval** (7-question golden set, 5-document agronomy corpus): faithfulness 1.00, hit@10 1.00, MRR 0.92, nDCG@10 0.94. Details and confidence intervals are in [Results](#results-p0b-smoke-eval).
+
 > Full design spec: [docs/superpowers/specs/2026-06-02-production-rag-system-design.md](docs/superpowers/specs/2026-06-02-production-rag-system-design.md)
 
 ---
